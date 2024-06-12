@@ -1,24 +1,18 @@
 package br.com.java.oo.animais;
 
-public class Cachorro {
+public class Cachorro extends Animal { //(vai receber todas as caracteristicas da classe Animal)
 	
 	//Atributos (de todos os objetos Cachorros):
 	static int numeroDeCachorros; //variável estatica para contar quantos objetos foram criados
 	
-	private String nome;
-	private String cor;
-	private double altura;
-	private double peso;
 	private int tamanhoDoRabo;
-	private String estadoDeEspirito;
-
 	
 	//Construtores padrão
-	public Cachorro() {}
+	//public Cachorro() {}
 	
 	//Contrutores adicionados
 	public Cachorro(String nome, String cor, double altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
-		
+		super(nome, cor, peso);
 		this.nome = nome;
 		this.cor = cor;
 		this.altura = altura;
@@ -93,9 +87,6 @@ public class Cachorro {
 
 	
 	//Continuação de métodos:
-	public void comer() {}
-	
-	public void soar() { System.out.println("AU AU");}
 	
 	public String pegar() { //quando o método não é reclarado com "void", ele irá retornar algo
 		return //quando resejamos que ele retorne algo
@@ -134,6 +125,12 @@ public class Cachorro {
 	public String toString() {
 		return "Cachorro [nome=" + nome + "]";
 	}
+
+	@Override //Método que foi herdado. Mesmo nome, mas com funcionalidades distintas
+	public void soar() {
+		System.out.println("AU AU!");
+	}
+	
 	
 	
 	
