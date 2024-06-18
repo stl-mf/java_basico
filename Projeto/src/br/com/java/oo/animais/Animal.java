@@ -84,5 +84,5 @@ public abstract class Animal {
 	//Métodos:
 	protected void comer() {}
 	protected void dormir() {}
-	public abstract void soar() {}//o "void" indica que não dá retorno
+	public /**abstract*/ void soar() {}//o "void" indica que não dá retorno
 }
