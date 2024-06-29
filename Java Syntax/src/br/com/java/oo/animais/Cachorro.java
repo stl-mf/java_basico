@@ -7,8 +7,8 @@ public class Cachorro extends Animal { //(vai receber todas as caracteristicas d
 	
 	private int tamanhoDoRabo;
 	
-	//Construtores padrão
-	//public Cachorro() {}
+	//Construtores padrão sem parâmetro
+	public Cachorro() {}
 	
 	//Contrutores adicionados
 	public Cachorro(String nome, String cor, double altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {

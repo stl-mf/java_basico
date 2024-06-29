@@ -19,6 +19,9 @@ public abstract class Animal {
 		this.peso = peso;
 	}
 	
+	public Animal() {
+		
+	}
 	
 	
 	public String getNome() {
